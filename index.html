@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="h-[100vh] flex justify-center items-center">
+
+    <div class="h-6 bg-blue flex flex-col items-center">
+        <button id="btn" onclick="handleBeep()" class="w-fit border-2 rounded cursor-pointer hover:bg-[blue] transition-all duration-300">
+            beep!
+        </button>
+        <div>
+            <ul class="flex mt-2">
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">C4</li>
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">C#4</li>
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">D4</li>
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">D#4</li>
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">E4</li>
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">F4</li>
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">F#4</li>
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">G4</li>
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">G#4</li>
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">A4</li>
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">A#4</li>
+                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">B4</li>
+            </ul>
+        </div>
+    </div>
+
+  </body>
+</html>
