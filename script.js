@@ -52,7 +52,6 @@ notes.forEach((note) => {
         })[0]
       );
       note.style.backgroundColor = "blue";
-      console.log(selectedFreqs);
     }
   });
 });

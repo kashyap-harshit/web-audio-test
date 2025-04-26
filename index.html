@@ -3,32 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Responsive Beep</title>
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="h-[100vh] flex justify-center items-center">
+  <body class="h-[100vh] flex justify-center items-center p-4">
 
-    <div class="h-6 bg-blue flex flex-col items-center">
-        <button id="btn" onclick="handleBeep()" class="w-fit border-2 rounded cursor-pointer hover:bg-[blue] transition-all duration-300">
-            beep!
-        </button>
-        <div>
-            <ul class="flex mt-2">
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">C4</li>
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">C#4</li>
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">D4</li>
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">D#4</li>
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">E4</li>
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">F4</li>
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">F#4</li>
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">G4</li>
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">G#4</li>
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">A4</li>
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">A#4</li>
-                <li class="notes border-2 rounded w-8 text-center cursor-pointer mr-2">B4</li>
-            </ul>
-        </div>
+    <div class="w-full max-w-md flex flex-col items-center space-y-4">
+      
+      <button id="btn" onclick="handleBeep()" class="px-4 py-2 border-2 rounded cursor-pointer hover:bg-blue-500 transition-all duration-300 text-lg">
+        beep!
+      </button>
+
+      <div class="w-full">
+        <ul class="flex flex-wrap justify-center gap-2">
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">C4</li>
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">C#4</li>
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">D4</li>
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">D#4</li>
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">E4</li>
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">F4</li>
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">F#4</li>
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">G4</li>
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">G#4</li>
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">A4</li>
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">A#4</li>
+          <li class="notes border-2 rounded w-12 text-center cursor-pointer p-2">B4</li>
+        </ul>
+      </div>
+
     </div>
 
   </body>
